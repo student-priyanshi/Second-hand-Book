@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="app-promo">
+            Get Rs50 extra off, Use Code : <strong>Shelf 50</strong>
+        </div>
+        <div class="header-links">
+            <a href="#">Place Order</a>
+            <a href="tel:9050111218">Contact: 90501 11218</a>
+        </div>
+    </header>
+
+    <!-- NavBar Section -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="images/logo.png" class="logo">
+            <span class="book-name">BookShelf</span>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search By ISBN,Title,Author...." class="search-bar">
+        </div>
+        <div class="auth-buttons">
+            <button class="Signup-btn" id="signupBtn">Sign Up</button>
+            <button class="login-btn" id="loginBtn">Login</button>
+        </div>
+        
+    </nav>
+
+    <!-- MenuBar Section -->
+    <div class="menu-container">
+        <div class="menu-bar">
+            <div class="menu-icon">
+                <!-- Icon Placeholder -->
+                <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                </svg>
+                <span>Shop By Category</span>
+                <span>Shop By Store</span>
+            </div>
+            <a href="#" class="menu-item">Used Books</a>
+            <a href="#" class="menu-item">39 Store</a>
+            <a href="#" class="menu-item">59 Store</a>
+            <a href="#" class="menu-item">Hindi Literature</a>
+            <a href="#" class="menu-item">Children</a>
+            <a href="#" class="menu-item">Text Books</a>
+            <a href="#" class="menu-item">Harry Potter Store</a>
+            <a href="#" class="menu-item">Manga Store</a>
+            <a href="#" class="menu-item">Literature and Fiction</a>
+            <a href="#" class="menu-item">India Top Read</a>
+                <!-- Arrow Placeholder -->
+                <svg width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path d="M1.5 8l6-6L9 3l-4 4 4 4-1.5 1.5-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+   
+    
+
+    
+    <!-- Carousel Section -->
+<div class="carousel">
+    <button class="carousel-control prev">◀</button>
+    <div class="slides">
+        <div class="slide">
+            <img src="images/car3.png" alt="Slide Image 1">
+        </div>
+        <div class="slide">
+            <img src="images/carosuel.png" alt="Slide Image 2">
+        </div>
+        <div class="slide">
+            <img src="images/carousel2.png" alt="Slide Image 3">
+        </div>
+    </div>
+    <button class="carousel-control next">▶</button>
+</div>
+
+
+<script>
+    //   Signup and Login buttons  
+    // Get the buttons by their IDs
+    const signupBtn = document.getElementById('signupBtn');
+    const loginBtn = document.getElementById('loginBtn');
+
+    // Add event listeners to handle navigation
+    signupBtn.addEventListener('click', function() {
+        window.location.href = 'signup.html';  // Redirect to the sign-up page
+    });
+
+    loginBtn.addEventListener('click', function() {
+        window.location.href = 'login.html';  // Redirect to the login page
+    });
+
+
+
+        // menubar
+        const menuBar = document.querySelector('.menu-bar');
+        let isDragging = false;
+        let startX;
+        let scrollStart;
+
+        menuBar.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.pageX - menuBar.offsetLeft;
+            scrollStart = menuBar.scrollLeft;
+        });
+
+        menuBar.addEventListener('mouseleave', () => {
+            isDragging = false;
+        });
+
+        menuBar.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        menuBar.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const x = e.pageX - menuBar.offsetLeft;
+            const move = (x - startX) * 3; //scroll speed
+            menuBar.scrollLeft = scrollStart - move;
+        });
+        
+        // carousel
+       // Select the necessary elements
+const slides = document.querySelector('.carousel .slides');
+const slideImages = document.querySelectorAll('.carousel .slides img');
+const slideCount = slideImages.length;
+let currentIndex = 0;
+let slideInterval = setInterval(nextSlide, 3000); // Slide every 3 seconds
+
+// Attach event listeners for manual controls
+document.querySelector('.carousel-control.prev').addEventListener('click', prevSlide);
+document.querySelector('.carousel-control.next').addEventListener('click', nextSlide);
+
+// Function to move to the next slide
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slideCount;
+    updateSlidePosition();
+}
+
+// Function to move to the previous slide
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+    updateSlidePosition();
+}
+
+// Function to update the slide position
+function updateSlidePosition() {
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Pause the slideshow on mouse hover
+function pauseSlideshow() {
+    clearInterval(slideInterval);
+}
+
+// Resume the slideshow when mouse is not hovering
+function resumeSlideshow() {
+    slideInterval = setInterval(nextSlide, 3000);
+}
+
+// Add event listeners to pause and resume the slideshow on hover
+document.querySelector('.carousel').addEventListener('mouseover', pauseSlideshow);
+document.querySelector('.carousel').addEventListener('mouseout', resumeSlideshow);
+
+
+
+</script>
+</body>
+</html>
