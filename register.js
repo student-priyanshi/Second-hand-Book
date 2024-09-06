@@ -10,7 +10,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     if (password !== confirmPassword) {
         messageDiv.textContent = 'Passwords do not match.';
     } else {
-        messageDiv.textContent = 'Registration successful!';
+        messageDiv.textContent = 'Sign Up successful!';
         messageDiv.style.color = 'green';
         // Here, you can add code to handle the form submission, e.g., sending the data to the server.
     }

@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Clone</title>
+    
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="app-promo">
+            Get Rs50 extra off, Use Code : <strong>Shelf 50</strong>
+        </div>
+        <div class="header-links">
+            <a href="#">Place Order</a>
+            <a href="tel:9050111218">Contact: 90501 11218</a>
+        </div>
+    </header>
+
+    <!-- NavBar Section -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="New folder/logo.jpg" class="logo">
+            <span class="book-name">BookShelf</span>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search By ISBN,Title,Author...." class="search-bar">
+        </div>
+        <div class="auth-buttons">
+            <button class="Signup-btn" id="signupBtn">Sign Up</button>
+            <button class="login-btn" id="loginBtn">Login</button>
+        </div>
+        
+    </nav>
+
+    <!-- MenuBar Section -->
+    <div class="menu-container">
+        <div class="menu-bar">
+            <div class="menu-icon">
+                <!-- Icon Placeholder -->
+                <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                </svg>
+                <span>Shop By Category</span>
+                <span>Shop By Store</span>
+            </div>
+            <a href="#" class="menu-item">Used Books</a>
+            <a href="#" class="menu-item">39 Store</a>
+            <a href="#" class="menu-item">59 Store</a>
+            <a href="#" class="menu-item">Hindi Literature</a>
+            <a href="#" class="menu-item">Children</a>
+            <a href="#" class="menu-item">Text Books</a>
+            <a href="#" class="menu-item">Harry Potter Store</a>
+            <a href="#" class="menu-item">Manga Store</a>
+            <a href="#" class="menu-item">Literature and Fiction</a>
+            <a href="#" class="menu-item">India Top Read</a>
+                <!-- Arrow Placeholder -->
+                <svg width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path d="M1.5 8l6-6L9 3l-4 4 4 4-1.5 1.5-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+<!-- Carousel Section -->
+<div class="carousel">
+    <button class="carousel-control prev">◀</button>
+    <div class="slides">
+        <div class="slide">
+            <img src="nav4.jpg" alt="Slide Image 1">
+        </div>
+        <div class="slide">
+            <img src="nav2.jpg" alt="Slide Image 2">
+        </div>
+        <div class="slide">
+            <img src="nav5.jpg" alt="Slide Image 3">
+        </div>
+    </div>
+    <button class="carousel-control next">▶</button>
+</div>
+<h2>Top Books</h2>
+<div class="scroll-wrapper">
+    <button id="scrollLeftBtn" class="scroll-btn prev">◀</button>
+    <div id="scrollContainer" class="scroll-container">
+        <div class="box">
+            <img src="New folder/b2.jpg" alt="Book 1">
+            <div class="book-info">
+                <h2>Let The Snog Fest Begin!</h2>
+                <p class="price">₹ 225</p>
+                <p class="original-price">₹ 250</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b3.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Captains Treasure</h2>
+                <p class="price">₹ 315</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">10% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b4.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>TCarol River</h2>
+                <p class="price">₹ 300</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b5.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Donor</h2>
+                <p class="price">₹ 200</p>
+                <p class="original-price">₹ 250</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b6.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Christmas Wishes</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b7.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Key Words With Ladybird</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b8.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Helen Forrester</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b9.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The X file</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b10.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Doctors Texas Baby</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b11.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Ginger Is a Home Remedy</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b12.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Wedding Etiquotte</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b13.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Goose Girl</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b14.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Murder At The Happy Home For The Aged</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b15.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Independences</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b16.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Treasure Island</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b17.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Rupa Book Of Thrills and Spills</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b18.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Ben 10 Alien Force</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b19.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Erase The Ego</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b20.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Yoga Of Sleep and Dreams</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        
+        
+    </div>
+    <button id="scrollRightBtn" class="scroll-btn next">▶</button>
+</div>
+
+<h2>Books Of Sets</h2>
+<div class="scroll-wrapper">
+    <button id="scrollLeftBtn" class="scroll-btn prev">◀</button>
+    <div id="scrollContainer" class="scroll-container">
+        <div class="box">
+            <img src="New folder/b21.jpg" alt="Book 1">
+            <div class="book-info">
+                <h2>Harry and the Wrinklies</h2>
+                <p class="price">₹ 225</p>
+                <p class="original-price">₹ 250</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b22.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Naishpur And Babylon</h2>
+                <p class="price">₹ 315</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">10% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b23.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Tilbury Poppies</h2>
+                <p class="price">₹ 300</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b106.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Nights Of Rains & Stars</h2>
+                <p class="price">₹ 200</p>
+                <p class="original-price">₹ 250</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b25.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Pilgrimage</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b26.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Catherine Cookson</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b27.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>An Angel held my Hand</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b28.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Love In Spried</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b29.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Orphans of Bell Lane</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b109.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Screats</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b108.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Golden Fox</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b32.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>My Twon</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b105.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Season</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b34.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Twice Upon a Time</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b35.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>School</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b36.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Erase The Ego</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b37.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Edge of Reason</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b38.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Catherin Cookson</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b39.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>A Christmas Cracker</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b40.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Yoga Of Sleep and Dreams</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        
+        
+    </div>
+    <button id="scrollRightBtn" class="scroll-btn next">▶</button>
+</div>
+<h2>What's Trending?</h2>
+<div class="scroll-wrapper">
+    <button id="scrollLeftBtn" class="scroll-btn prev">◀</button>
+    <div id="scrollContainer" class="scroll-container">
+        <div class="box">
+            <img src="New folder/b41.jpg" alt="Book 1">
+            <div class="book-info">
+                <h2>The Harrogate Secret</h2>
+                <p class="price">₹ 225</p>
+                <p class="original-price">₹ 250</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b42.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Doorstep Child</h2>
+                <p class="price">₹ 315</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">10% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b43.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>East end Angle</h2>
+                <p class="price">₹ 300</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b44.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Its your Move</h2>
+                <p class="price">₹ 200</p>
+                <p class="original-price">₹ 250</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b45.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Dynamic</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b46.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Three Adventure Sherlockhong</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b47.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Power Of The Sword</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b48.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Ville Victorians</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b49.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>A Loving Family Dilly Court</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b50.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>No Greater Love</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b51.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Appeal</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b52.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Beach Party</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b53.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>David Edding</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b54.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Love in Another Town</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b55.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Russell Brand</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b56.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Davinci Code</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b57.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Northanger Abbey</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b58.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Second Time Around</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b59.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Bridgi Jones's Diary</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b60.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Marks of Cain</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        
+        
+    </div>
+    <button id="scrollRightBtn" class="scroll-btn next">▶</button>
+</div>
+<h2>Recently Purchased</h2>
+<div class="scroll-wrapper">
+    <button id="scrollLeftBtn" class="scroll-btn prev">◀</button>
+    <div id="scrollContainer" class="scroll-container">
+        <div class="box">
+            <img src="New folder/b61.jpg" alt="Book 1">
+            <div class="book-info">
+                <h2>So Long & Thanks For All The Fish</h2>
+                <p class="price">₹ 225</p>
+                <p class="original-price">₹ 250</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b62.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Light A Pemy Candle</h2>
+                <p class="price">₹ 315</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">10% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b63.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Shell Sffers</h2>
+                <p class="price">₹ 300</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b64.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Black Box</h2>
+                <p class="price">₹ 200</p>
+                <p class="original-price">₹ 250</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b65.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Wondow the Snooth</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b66.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Jests & Andrew Gross</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b67.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Mixed Blessings</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b104.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Echoes</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b69.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Daddy</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b70.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Testament</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b71.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Blow Out</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b72.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Debt Of Honour</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b73.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Elizabeth Geroge Deception On His Times</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b74.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Angel Light</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b75.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Net Force</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b76.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Andrew</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b77.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Aspen Gold</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b78.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Patricia Cornwell</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b79.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>I'LL Take Man Hattan</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b80.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Rebeca Wells</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        
+        
+    </div>
+    <button id="scrollRightBtn" class="scroll-btn next">▶</button>
+</div>
+<h2>New Released</h2>
+<div class="scroll-wrapper">
+    <button id="scrollLeftBtn" class="scroll-btn prev">◀</button>
+    <div id="scrollContainer" class="scroll-container">
+        <div class="box">
+            <img src="New folder/b81.jpg" alt="Book 1">
+            <div class="book-info">
+                <h2>The Greatest Show On Earth</h2>
+                <p class="price">₹ 225</p>
+                <p class="original-price">₹ 250</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b82.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Body of Evidence</h2>
+                <p class="price">₹ 315</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">10% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b83.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Champion Of The World</h2>
+                <p class="price">₹ 300</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b84.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Let it Shine</h2>
+                <p class="price">₹ 200</p>
+                <p class="original-price">₹ 250</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b85.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Narnta</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b86.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Traveller</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b87.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Life The Universe and Everything</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b102.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>In time for Christmas</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b89.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>A Passionate Man</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b90.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Tooth & Nail</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b91.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Street Lawyer</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b92.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Charlie & The Choclate Factory</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b101.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Dreamer</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b94.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Granny Dan</h2>
+                <p class="price">₹ 300</p>
+                <p class="original-price">₹ 350</p>
+                <p class="discount">15% OFF</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b95.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Silent Honour</h2>
+                <p class="price">₹ 300</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b96.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Tara Road</h2>
+                <p class="price">₹ 300</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b110.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Resorrection Man</h2>
+                <p class="price">₹ 300</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b111.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>Stolen</h2>
+                <p class="price">₹ 300</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b99.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>At My Mother Knee</h2>
+                <p class="price">₹ 300</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="New folder/b112.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Year of The Virgins</h2>
+                <p class="price">₹ 300</p>
+            </div>
+        </div>
+        
+        
+    </div>
+    <button id="scrollRightBtn" class="scroll-btn next">▶</button>
+</div>
+<script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.header {
+  background-color: #800000;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:white ;
+  font-size: 14px;
+}
+
+.header .app-promo{
+  margin-left:70px;
+}
+
+.header-links {
+  display: flex;
+  gap: 40px;
+  margin-right: 50px;
+}
+
+.header-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Navbar Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:white;
+  color: black;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img{
+  height:60px;
+  width:120px;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.book-name {
+  font-size: 35px;
+  font-weight: bold;
+
+}
+
+.search-container {
+  flex-grow: 1;
+  margin: 0 60px;
+}
+
+.search-bar {
+  width: 60%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: gainsboro;
+  border:2px solid black;
+  margin-left: 40px;
+}
+
+.auth-buttons button {
+  margin-right: 65px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: grey;
+  color:white;
+  
+}
+
+.signup-btn {
+  background-color: grey;
+  color: white;
+}
+
+.login-btn {
+  background-color: grey;
+  color: white;
+}
+
+/* Menubar Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.menu-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-bar {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  color: #f25d1c;
+  margin-right: 15px;
+  flex-shrink: 0;
+  gap:20px;
+}
+
+.menu-icon svg {
+  margin-right: 5px;
+}
+
+.menu-item {
+  margin-right: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 19px;
+  flex-shrink: 0;
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+.store-link {
+  color: gray;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.store-link svg {
+  margin-left: 5px;
+}
+
+
+
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+  width: 100%;
+  height: 300px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px; /* Adjust as needed */
+}
+
+.next {
+  right: 10px; /* Adjust as needed */
+}
+
+
+.carousel .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img{
+  height:500px;
+  width:1500px;
+}
+
+.carousel .slide {
+  min-width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel .box {
+  min-width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel .promo-content {
+  text-align: center;
+  color: white;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel .promo-content h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.carousel .promo-content p {
+  font-size: 24px;
+  margin: 10px 0 0;
+}
+
+
+.box {
+  flex: 0 0 auto; /* Prevent boxes from shrinking */
+  width: 150px;
+  height: 380px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 250px; /* Keep image responsive */
+}
+
+/* Scroll buttons positioning */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-btn.prev {
+  left: 0; /* Adjust as needed */
+}
+
+.scroll-btn.next {
+  right: 0; /* Adjust as needed */
+}
+
+
+/* Hide scroll bar */
+.scroll-wrapper {
+  position: relative;
+  width: 100%; /* Full width of the parent */
+}
+
+.scroll-container {
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  padding: 10px 0;
+  /* Set a specific width if necessary */
+  width: calc(100% - 80px); 
+}
+
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.book-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.book-info h2 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.book-info .price {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.book-info .original-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.book-info .discount {
+  font-size: 12px;
+  color: #ff0000;
+}
+

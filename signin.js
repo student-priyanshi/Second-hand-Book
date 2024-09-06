@@ -12,5 +12,6 @@ document.getElementById('signinForm').addEventListener('submit', function(event)
         // Redirect or perform other actions upon successful sign-in
     } else {
         messageDiv.textContent = 'Invalid email or password.';
+        messageDiv.style.color = 'red';
     }
 });
